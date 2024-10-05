@@ -1,0 +1,44 @@
+body {
+    background-color: #FFF0F5;
+}
+
+section {
+    background-color: palevioletred;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+
+
+p {
+    text-align: justify;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-container img {
+    width: 300px; /* Общий фиксированный размер для всех изображений */
+    height: auto; /* Автоматическое масштабирование высоты в зависимости от ширины */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавление тени для визуального эффекта */
+    margin: 10px; /* Отступы между изображениями */
+}
+
+@media (max-width: 700px) {
+    .img-container img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
